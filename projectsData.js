@@ -41,8 +41,8 @@ export const projectsData = [
   {
     id: 4,
     name: "Tickety",
-    link: "https://szathrobi.github.io/tickety/",
-    codeLink: "https://github.com/SzathRobi/tickety/tree/master",
+    link: "https://tickety.vercel.app/",
+    codeLink: "https://szathrobi.github.io/tickety/",
     desc: "The project's goal was to build a bug tracking / ticket management system for future projects. It took few weeks to plan, design and develop. It is still under development, need some minor bug fixes and extra features but the MVP is ready ",
     images: [
       "/project_imgs/tickety_1.jpg",
@@ -67,7 +67,7 @@ export const projectsData = [
   {
     id: 6,
     name: "MarilynArt",
-    link: "https://tickety.vercel.app/",
+    link: "https://marilynart.vercel.app/",
     codeLink: "https://github.com/SzathRobi/tickety",
     desc: 'I was asked to make an Ecommerce site for a client who had alredy 2 shop near Budapest. I setted up strapi as the headles CMS of the app, utilized Next.js for the frontend to make it super performant. I used Material-UI to provide a good UI/UX and bring out the maximum from the site. It was one of free "step in the field" project for me. Unfortunately, the client was not so motivated as me, and when we were near to finish the site, he shut down the whole project',
     images: [
