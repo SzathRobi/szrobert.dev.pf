@@ -12,7 +12,7 @@ function Project() {
   const { pName } = router.query;
   const project = projectsData.filter((pData) => pData.name === pName)[0];
 
-  const [actualImg, setActualImg] = useState(project.images[0]);
+  const [actualImg, setActualImg] = useState(project?.images[0] ?? null);
   //  animation: fadeIn 1s ease-in forwards;
   const [imgAnimation, setImgAnimation] = useState(styles.fadeIn);
   const changeActualImg = (img) => {
@@ -59,7 +59,7 @@ function Project() {
             <div className={styles.choosableImgsContainer}>
               <div className={styles.choosableImg}>
                 <Image
-                  src={project.images[0]}
+                  src={project?.images[0] ?? "loading"}
                   onClick={() => changeActualImg(project.images[0])}
                   alt="project"
                   layout="responsive"
@@ -70,7 +70,7 @@ function Project() {
               </div>
               <div className={styles.choosableImg}>
                 <Image
-                  src={project.images[1]}
+                  src={project?.images[1] ?? "loading"}
                   onClick={() => changeActualImg(project.images[1])}
                   alt="project"
                   layout="responsive"
@@ -81,7 +81,7 @@ function Project() {
               </div>
               <div className={styles.choosableImg}>
                 <Image
-                  src={project.images[2]}
+                  src={project?.images[2] ?? ""}
                   onClick={() => changeActualImg(project.images[2])}
                   alt="project"
                   layout="responsive"
@@ -94,17 +94,15 @@ function Project() {
           </div>
         </div>
         <div className={styles.infoSection}>
-          <h1>{project.name}</h1>
-          <p>{project.desc}</p>
+          <h1>{project?.name ?? "loading"}</h1>
+          <p>{project?.desc ?? "loading"}</p>
           <div className={styles.projectStackContainer}>
-            {project.stack.map((item) => (
-              <p key={item}>{item}</p>
-            ))}
+            {project && project.stack.map((item) => <p key={item}>{item}</p>)}
           </div>
-          <Link href={project.codeLink}>
+          <Link href={project?.codeLink ?? ""}>
             <a target="_blank">CODE</a>
           </Link>
-          <Link href={project.link}>
+          <Link href={project?.link ?? ""}>
             <a target="_blank">DEMO</a>
           </Link>
         </div>

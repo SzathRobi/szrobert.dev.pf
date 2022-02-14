@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     port: 465,
     auth: {
       user: "robertpfsite@gmail.com",
-      pass: "Figma98)(",
+      pass: process.env.password,
     },
   });
 
