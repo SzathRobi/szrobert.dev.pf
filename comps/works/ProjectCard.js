@@ -28,9 +28,11 @@ function ProjectCard({ img, name, link, changePage }) {
       <h3>{name}</h3>
       <div className={styles.btnGroup}>
         <button onClick={() => changePage(`/${name}`)}>DETAILS</button>
-        <Link href={link}>
-          <a target="_blank">VISIT</a>
-        </Link>
+        {name !== "Tickety" && (
+          <Link href={link}>
+            <a target="_blank">VISIT</a>
+          </Link>
+        )}
       </div>
     </div>
   );
