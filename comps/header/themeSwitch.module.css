@@ -1,0 +1,53 @@
+.ThemeSwitch {
+  height: 1.5rem;
+  width: 3rem;
+  padding: 0.1rem;
+  border-radius: 20rem;
+  background: linear-gradient(158.25deg, #333333 0%, #444444 100%);
+  position: relative;
+  cursor: pointer;
+  box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    1px 1px 3px rgba(0, 0, 0, 0.4), inset -1px -1px 1px rgba(255, 255, 255, 0.2),
+    inset 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.ThemeSwitch > div {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  z-index: 10;
+  transform: translateY(-50%);
+  transition: 250ms;
+  background: linear-gradient(152.02deg, #4f4f4f 12.86%, #333 83.38%);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ThemeSwitch > div > div {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(152.02deg, #30ff9c 12.86%, #00b15c 83.38%);
+  box-shadow: 0px 0px 2px rgba(69, 199, 255, 0.85);
+}
+
+.ThemeSwitch input {
+  visibility: hidden;
+}
+
+.ThemeSwitch svg {
+  color: #30ff9c;
+  width: 1rem;
+}
+.ThemeSwitch svg:nth-of-type(1) {
+  transform: translateX(4px);
+}
+
+.ThemeSwitch svg:nth-of-type(2) {
+  transform: translateX(0.55rem);
+}

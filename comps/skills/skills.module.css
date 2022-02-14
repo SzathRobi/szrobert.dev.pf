@@ -1,0 +1,75 @@
+.Skills {
+  position: relative;
+  top: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transform: translateY(-2rem);
+}
+
+.SkillGrid {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem 0.5rem;
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  top: 4rem;
+}
+
+.imgContainer {
+  max-width: 600px;
+}
+
+.SkillGrid div {
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #333;
+  font-size: 1.2rem;
+  box-shadow: 8px 8px 16px #282828, inset 8px 8px 16px #2b2b2b,
+    inset -16px -16px 32px #1f1f1f;
+}
+
+@media (max-width: 768px) {
+  .Skills {
+    top: 18rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    transform: translateY(2rem);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .imgContainer {
+    max-width: 400px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -8rem;
+    left: -5rem;
+  }
+  .SkillGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    top: 5rem;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 460px) {
+  .Skills {
+    top: 20rem;
+  }
+  .SkillGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

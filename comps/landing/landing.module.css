@@ -1,0 +1,111 @@
+.Landing {
+  width: 100%;
+  min-height: 60vh;
+  padding: 1rem;
+  padding-top: 5rem;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+.LandingImgContainer {
+  width: 25rem;
+  position: relative;
+  left: 3rem;
+}
+
+.Landing svg {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Landing svg:nth-of-type(2) {
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.Landing img {
+  transform: translateY(-3rem);
+}
+
+.Landing svg:nth-last-of-type(2) {
+  transform: translate(-45%, -60%);
+}
+
+.TitleContainer {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.TitleContainer h1,
+.TitleContainer h2,
+.TitleContainer h3 {
+  max-width: 25ch;
+  padding: 1.5rem;
+  color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 3px 3px 8px #1c1c1c, inset 6px 6px 12px #282828,
+    inset -8px -8px 16px #242424;
+}
+
+.TitleContainer h1 {
+  font-size: 2rem;
+}
+
+.TitleContainer h2 {
+  font-size: 1.5rem;
+  transform: translateX(4rem);
+}
+
+.TitleContainer h3 {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.TitleContainer span {
+  position: relative;
+  left: -1.5rem;
+  opacity: 0;
+  animation: fadeInFromLeft 50ms ease-in forwards;
+  transition: 100ms;
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    left: -1.5rem;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.TitleContainer span:hover {
+  color: #00b15c;
+  text-shadow: 0 0 2px #09ce6f;
+}
+
+@media (max-width: 768px) {
+  .Landing {
+    padding-top: 5rem;
+    top: 3rem;
+    flex-direction: column-reverse;
+  }
+
+  .LandingImgContainer {
+    width: 20rem;
+    left: 0;
+  }
+
+  .TitleContainer h2 {
+    transform: translateX(2rem);
+  }
+}

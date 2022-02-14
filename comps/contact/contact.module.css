@@ -1,0 +1,139 @@
+.Contact {
+  position: relative;
+  top: 10rem;
+}
+
+.Contact .imgContainer {
+  max-width: 500px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+  transform: translateY(-3rem);
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ContactCard {
+  min-width: 300px;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #2c2c2c;
+  color: #fff;
+  overflow: hidden;
+  transition: 300ms;
+  box-shadow: 8px 8px 16px #282828, inset 8px 8px 16px #2b2b2b,
+    inset -16px -16px 32px #1f1f1f;
+}
+
+.ContactCard svg {
+  width: 2rem;
+  color: #30ff9c;
+}
+
+.ContactCard span {
+  position: relative;
+  left: -1.5rem;
+  opacity: 0;
+  animation: fadeInFromLeft 50ms ease-in forwards;
+  transition: 100ms;
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    left: -1.5rem;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.Contact form {
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 3px 3px 8px #1c1c1c, inset 6px 6px 12px #282828,
+    inset -8px -8px 16px #242424;
+}
+
+.Contact form h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.Contact input,
+.Contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: linear-gradient(158.25deg, #333333 0%, #444444 100%);
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.35),
+    2px 4px 6px rgba(0, 0, 0, 0.5),
+    inset -1px -2px 6px rgba(255, 255, 255, 0.35),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Contact button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #00b15c;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: 200ms;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+    inset 1px 1px 2px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Contact button:hover {
+  background-color: #008545;
+}
+
+@media (max-width: 768px) {
+  .Contact {
+    top: 30rem;
+  }
+  .cardContainer {
+    flex-direction: column;
+  }
+  .container {
+    transform: translateY(2rem);
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .Contact {
+    top: 32rem;
+  }
+}

@@ -1,0 +1,20 @@
+.Header {
+  width: 100%;
+  height: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #333;
+}
+
+.Header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
