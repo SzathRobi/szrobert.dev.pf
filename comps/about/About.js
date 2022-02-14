@@ -11,7 +11,7 @@ import AboutCard from "./AboutCard";
 
 function About() {
   return (
-    <div className={styles.About}>
+    <div className={styles.About} id="About">
       <div className={styles.container}>
         <div className={styles.imgContainer}>
           <Image

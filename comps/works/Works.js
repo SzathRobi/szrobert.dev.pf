@@ -7,7 +7,7 @@ import { projectsData } from "../../projectsData";
 
 function Works({ changePage }) {
   return (
-    <section className={styles.Works}>
+    <section className={styles.Works} id="Works">
       <div className={styles.imgContainer}>
         <Image
           src="/imgs/worksMe.svg"

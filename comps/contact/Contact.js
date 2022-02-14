@@ -40,7 +40,7 @@ function Contact() {
   };
 
   return (
-    <section className={styles.Contact}>
+    <section className={styles.Contact} id="Contact">
       <SectionTitle text="Contact" />
       <div className={styles.cardContainer}>
         <ContactCard text="szathrobi98@gmail.com" icon={faEnvelope} />

@@ -10,7 +10,9 @@ function Header() {
     <header className={`${styles.Header} ${theme}`}>
       <nav>
         {navItems.map((item) => (
-          <a key={item}>{item}</a>
+          <a key={item} href={`#${item}`}>
+            {item}
+          </a>
         ))}
         {/*  <ThemeSwitch setTheme={setTheme} />*/}
       </nav>

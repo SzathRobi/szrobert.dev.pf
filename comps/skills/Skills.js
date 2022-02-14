@@ -6,7 +6,7 @@ import styles from "./skills.module.css";
 
 function Skills() {
   return (
-    <section className={styles.Skills}>
+    <section className={styles.Skills} id="Skills">
       <SectionTitle text="Skills" />
       <div className={styles.container}>
         <div className={styles.imgContainer}>

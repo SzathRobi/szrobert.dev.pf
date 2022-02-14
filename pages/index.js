@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <main className={`${styles.container} ${pageAnimation} ${theme}`}>
+    <main className={`${styles.container} ${pageAnimation} ${theme}`} id="Home">
       <Header />
       <Landing />
       <Works changePage={changePage} />
