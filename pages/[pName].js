@@ -12,7 +12,7 @@ function Project() {
   const { pName } = router.query;
   const project = projectsData.filter((pData) => pData.name === pName)[0];
 
-  const [actualImg, setActualImg] = useState(project?.images[0] ?? null);
+  const [actualImg, setActualImg] = useState(project?.images[0] ?? "");
   //  animation: fadeIn 1s ease-in forwards;
   const [imgAnimation, setImgAnimation] = useState(styles.fadeIn);
   const changeActualImg = (img) => {
