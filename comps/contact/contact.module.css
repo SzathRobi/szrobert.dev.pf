@@ -108,6 +108,11 @@
     inset 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+.Contact input::placeholder,
+.Contact textarea::placeholder {
+  color: #c4c4c4;
+}
+
 .Contact button {
   width: 100%;
   padding: 0.5rem 1rem;
