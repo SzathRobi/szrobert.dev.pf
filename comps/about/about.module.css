@@ -38,6 +38,7 @@
 }
 
 .iconContainer {
+  overflow: hidden;
   padding: 1rem;
   background-color: #2c2c2c;
   border-radius: 10rem;
@@ -51,7 +52,16 @@
 }
 
 .icon {
-  color: #008545;
+  color: #30ff9c;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .AboutCard h4 {

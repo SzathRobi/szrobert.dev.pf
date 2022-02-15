@@ -45,12 +45,16 @@
   color: #30ff9c;
 }
 
-.ContactCard span {
+.Contact span {
   position: relative;
   left: -1.5rem;
   opacity: 0;
   animation: fadeInFromLeft 50ms ease-in forwards;
   transition: 100ms;
+}
+
+.Contact form span {
+  color: #ff1f1f;
 }
 
 @keyframes fadeInFromLeft {
@@ -84,6 +88,10 @@
   margin-bottom: 1rem;
 }
 
+.Contact label {
+  width: 100%;
+}
+
 .Contact input,
 .Contact textarea {
   width: 100%;
@@ -93,6 +101,7 @@
   background: linear-gradient(158.25deg, #333333 0%, #444444 100%);
   color: #fff;
   font-size: 1rem;
+  outline: none;
   box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.35),
     2px 4px 6px rgba(0, 0, 0, 0.5),
     inset -1px -2px 6px rgba(255, 255, 255, 0.35),
@@ -117,6 +126,29 @@
 
 .Contact button:hover {
   background-color: #008545;
+}
+
+.SuccessMsg {
+  width: 90vw;
+  height: 3rem;
+  background-color: #00b15c;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 3rem;
+  left: 5vw;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.25),
+    inset -8px -8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.SuccessMsg p {
+  font-size: 1.25rem;
+  transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
