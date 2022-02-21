@@ -136,7 +136,7 @@ function Contact() {
               onChange={(e) => setEmail(e.target.value)}
               onFocus={onEmailFocus}
               onBlur={onEmailBlur}
-              placeholder="Your message here"
+              placeholder="Your email here"
             />
             <div style={emailFocusMarker} />
             {emailError && (
