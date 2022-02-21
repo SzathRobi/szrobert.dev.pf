@@ -102,11 +102,10 @@ function Project() {
           <Link href={project?.codeLink ?? ""}>
             <a target="_blank">CODE</a>
           </Link>
-          {pName !== "Tickety" && (
-            <Link href={project?.link ?? ""}>
-              <a target="_blank">DEMO</a>
-            </Link>
-          )}
+
+          <Link href={project?.link ?? ""}>
+            <a target="_blank">DEMO</a>
+          </Link>
         </div>
       </div>
     </section>
